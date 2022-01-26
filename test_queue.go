@@ -93,3 +93,7 @@ func (queue *TestQueue) ReadyCount() int {
 func (queue *TestQueue) RejectedCount() int {
 	return 0
 }
+
+func (queue *TestQueue) UnackedCount() int {
+	return 0
+}

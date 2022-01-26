@@ -50,6 +50,7 @@ type Queue interface {
 	Close() bool
 	ReadyCount() int
 	RejectedCount() int
+	UnackedCount() int
 }
 
 type redisQueue struct {
