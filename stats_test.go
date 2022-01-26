@@ -44,7 +44,7 @@ func (suite *StatsSuite) TestStats(c *C) {
 
 	stats = CollectStats([]string{"stats-q1", "stats-q2"}, connection)
 
-	for key, _ := range stats.QueueStats {
+	for key := range stats.QueueStats {
 		c.Check(key, Matches, "stats.*")
 	}
 	/*

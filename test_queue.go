@@ -85,3 +85,11 @@ func (queue *TestQueue) Close() bool {
 func (queue *TestQueue) Reset() {
 	queue.LastDeliveries = []string{}
 }
+
+func (queue *TestQueue) ReadyCount() int {
+	return 0
+}
+
+func (queue *TestQueue) RejectedCount() int {
+	return 0
+}
